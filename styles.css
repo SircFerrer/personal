@@ -1,0 +1,45 @@
+.header {
+  height: 100vh;
+  background-image: url(./images/boda.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__title {
+  color: plum;
+  font-family: "Lobster", cursive;
+  text-transform: uppercase;
+  font-size: 80px;
+}
+.header__subtitle {
+  color: white;
+  font-family: "Lobster", cursive;
+  text-transform: capitalize;
+  font-size: 50px;
+  text-align: center;
+}
+.img {
+  animation-name: intro;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.header__paragraph {
+  color: black;
+  font-family: "Lobster", cursive;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+@keyframes intro {
+  from {
+    opacity: 0;
+    transform: scale(10) rotate(-150deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
